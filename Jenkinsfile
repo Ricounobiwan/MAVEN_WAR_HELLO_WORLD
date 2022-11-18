@@ -27,7 +27,7 @@ pipeline{
         
 #        stage('Docker Build'){
 #            steps{
-#                sh "docker build . -t eghboyer@gmail.com/hariapp:${DOCKER_TAG} "
+#                sh "docker build . -t eghboyer/spring-hello-world:${DOCKER_TAG} "
 #            }
 #        }
 #        
@@ -37,7 +37,7 @@ pipeline{
 #                    sh "docker login -u eghboyer@gmail.com -p ${dockerHubPwd}"
 #                }
 #                
-#                sh "docker push eghboyer@gmail.com/hariapp:${DOCKER_TAG} "
+#                sh "docker push eghboyer/spring-hello-world:${DOCKER_TAG} "
 #            }
 #        }
 #        
