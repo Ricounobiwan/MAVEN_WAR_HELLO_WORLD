@@ -1,5 +1,5 @@
 ---
-- hosts: dev
+- hosts: 192.168.1.25
   become: True
   tasks:
     - name: Install python pip
