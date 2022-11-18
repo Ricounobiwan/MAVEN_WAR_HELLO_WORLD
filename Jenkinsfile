@@ -10,13 +10,7 @@ pipeline{
                 sh 'mvn -v'
             }
         }
-        
-        stage('SCM'){
-            steps{
-                git credentialsId: 'github', 
-                    url: 'https://github.com/Ricounobiwan/MAVEN_WAR_HELLO_WORLD'
-            }
-        }
+     
         
         stage('Maven Build'){
             steps{
