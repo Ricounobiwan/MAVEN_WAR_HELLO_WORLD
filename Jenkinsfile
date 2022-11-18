@@ -15,7 +15,7 @@ pipeline{
         stage('SCM'){
             steps{
                 git credentialsId: 'github', 
-                    url: 'https://github.com/Ricounobiwan/MAVEN_WAR_HELLO_WORLD.git'
+                    url: 'https://github.com/Ricounobiwan/MAVEN_WAR_HELLO_WORLD'
             }
         }
         
