@@ -3,9 +3,7 @@ pipeline{
     tools {
       maven 'MVH_HOME'
     }
-    environment {
-      DOCKER_TAG = getVersion()
-    }
+
     stages{
         stage('mvn build') {
             steps {
@@ -27,7 +25,7 @@ pipeline{
         
 #        stage('Docker Build'){
 #            steps{
-#                sh "docker build . -t eghboyer/spring-hello-world:${DOCKER_TAG} "
+#                sh "docker build . -t eghboyer/spring-hello-world:0.1 "
 #            }
 #        }
 #        
